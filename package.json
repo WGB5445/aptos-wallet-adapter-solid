@@ -1,0 +1,47 @@
+{
+  "name": "@wgb5445/aptos-wallet-adapter-solid",
+  "version": "0.0.1",
+  "description": "",
+  "type": "module",
+  "main": "./dist/index.cjs",
+  "module": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "files": [
+    "dist",
+    "src"
+  ],
+  "scripts": {
+    "build:tsup": "pnpm tsup",
+    "build": "pnpm build:tsup ",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@aptos-labs/wallet-adapter-core": "^4.7.0",
+    "solid-js": "^1.8.17",
+    "solid-slots": "^1.0.3"
+  },
+  "peerDependencies": {
+    "solid-js": "^1.8"
+  },
+  "devDependencies": {
+    "tsup": "^8.1.0",
+    "tsup-preset-solid": "^2.2.0",
+    "typescript": "^5.5.2"
+  },
+  "browser": {},
+  "exports": {
+    "solid": "./dist/index.jsx",
+    "import": {
+      "types": "./dist/index.d.ts",
+      "default": "./dist/index.js"
+    },
+    "require": {
+      "types": "./dist/index.d.cts",
+      "default": "./dist/index.cjs"
+    }
+  },
+  "typesVersions": {}
+}
