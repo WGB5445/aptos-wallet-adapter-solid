@@ -183,12 +183,6 @@ export const AptosWalletAdapterProvider: Component<AptosWalletProviderProps> = (
 
 
   createEffect (() => {
-    console.log("createEffet", {
-      account: walletCore().account,
-      network: walletCore().network,
-      connected: walletCore().isConnected(),
-      wallet: walletCore().wallet
-    })
     setState({
         account: walletCore().account,
         network: walletCore().network,
@@ -282,8 +276,6 @@ export const AptosWalletAdapterProvider: Component<AptosWalletProviderProps> = (
   };
 
   createEffect (() => {
-    console.log(walletCore())
-    console.log(wallets())
     walletCore().on("connect", handleConnect);
     walletCore().on("disconnect", handleDisconnect);
     walletCore().on("accountChange", handleAccountChange);
