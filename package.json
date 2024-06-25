@@ -1,6 +1,6 @@
 {
   "name": "@wgb5445/aptos-wallet-adapter-solid",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "",
   "type": "module",
   "main": "./dist/index.cjs",
@@ -9,15 +9,30 @@
   "files": [
     "dist",
     "src"
-  ],
+  ],  
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/wgb5445/aptos-wallet-adapter-solid.git"
+  },
+  "homepage": "https://github.com/wgb5445/aptos-wallet-adapter-solid",
+  "bugs": {
+    "url": "https://github.com/wgb5445/aptos-wallet-adapter-solid/issues"
+  },
   "scripts": {
     "build:tsup": "pnpm tsup",
     "build": "pnpm build:tsup ",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
+  "keywords": [
+    "Aptos",
+    "Aptos Labs",
+    "Wallet",
+    "Wallet Adapter",
+    "Wallet Adapter Provider",
+    "Solidjs"
+  ],
+  "author": "wgb5445",
+  "license": "Apache-2.0",
   "dependencies": {
     "@aptos-labs/wallet-adapter-core": "^4.7.0",
     "solid-js": "^1.8.17",
